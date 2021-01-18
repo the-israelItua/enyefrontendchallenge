@@ -1,0 +1,72 @@
+.profile {
+  padding-left: 18vw;
+  @media screen and (max-width: 990px) {
+    padding-left: 9vw;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    margin-bottom: 6rem;
+    @media screen and (max-width: 990px) {
+      padding: 2rem;
+    }
+    &__text {
+      font-size: 2rem;
+      @media screen and (max-width: 1200px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  &__back {
+    margin: 0 4rem 2rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    svg {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 990px) {
+      margin: 0 2rem 2rem;
+    }
+  }
+  &__card {
+    background: $grey-100;
+    min-height: 60vh;
+    border-radius: 8px;
+    padding: 4rem;
+    margin: 0 4rem;
+    @media screen and (max-width: 990px) {
+      margin: 0 2rem;
+    }
+    h5 {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      @media screen and (max-width: 1200px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 990px) {
+        font-size: 0.8rem;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  &__empty {
+    background: $grey-100;
+    min-height: 60vh;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 4rem;
+  }
+}

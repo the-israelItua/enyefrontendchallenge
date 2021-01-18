@@ -1,0 +1,92 @@
+.filter {
+  position: fixed;
+  right: 0;
+  width: 19vw;
+  padding: 5rem 2rem;
+  height: 100vh;
+  box-shadow: 5px 5px 5px 15px $grey-100;
+  @media screen and (max-width: 1400px) {
+    padding: 5rem 0.6rem;
+    box-shadow: 5px 5px 5px 10px $grey-100;
+  }
+  @media screen and (max-width: 990px) {
+    width: 22vw;
+  }
+  @media screen and (max-width: 596px) {
+    display: none;
+  }
+  &__text {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    @media screen and (max-width: 1400px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 1400px) {
+      font-size: 1rem;
+    }
+  }
+  &__content {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid $grey-100;
+  }
+  &__box {
+    input {
+      margin-right: 1rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      @media screen and (max-width: 1400px) {
+        height: 1rem;
+        width: 1rem;
+      }
+      @media screen and (max-width: 1400px) {
+        font-size: 1.2rem;
+      }
+    }
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      @media screen and (max-width: 1400px) {
+        font-size: 1.1rem;
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: 0.9rem;
+      }
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: 600;
+      @media screen and (max-width: 1400px) {
+        font-size: 0.9rem;
+      }
+    }
+    &__header {
+      display: flex;
+    }
+    &__body {
+      display: flex;
+      margin: 2rem 0 2rem 2rem;
+      @media screen and (max-width: 990px) {
+        margin: 1rem 0 1rem 1rem;
+      }
+    }
+  }
+  &__button {
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 2px solid $grey-200;
+    background: $grey-100;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    @media screen and (max-width: 1400px) {
+      padding: 1rem 0;
+    }
+    @media screen and (max-width: 1200px) {
+      font-size: 0.8rem;
+    }
+  }
+}

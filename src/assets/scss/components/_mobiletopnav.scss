@@ -1,0 +1,22 @@
+.mobile-top-nav {
+  display: none;
+  @media screen and (max-width: 596px) {
+    display: flex;
+    position: fixed;
+    padding: 1.5rem 1rem 0;
+    top: 0;
+    width: 100vw;
+    height: 4rem;
+    box-shadow: 0 0 0 5px $grey-100;
+    z-index: 1500;
+    background: white;
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+  }
+}

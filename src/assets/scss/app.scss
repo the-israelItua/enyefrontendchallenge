@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "circ";
+  src: url("../fonts/circBook.woff2") format("woff2"),
+    url("../fonts/circBook.woff") format("woff"),
+    url("../fonts/circBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "circ";
+}
+
+@import "./variables";
+
+//components
+
+@import "./components/sidebar";
+@import "./components/filter";
+@import "./components/transactions";
+@import "./components/transactionscard";
+@import "./components/profile";
+@import "./components/mobilebottomnav";
+@import "./components/mobiletopnav";
+
+//layouts
+
+@import "./layouts/dashboard";
